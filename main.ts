@@ -67,7 +67,7 @@ basic.forever(function () {
     basic.pause(speed)
 })
 basic.forever(function () {
-    if (droid == 1) {
+    if (droid && !(game.isGameOver())) {
         xw = randint(0, 4)
         led.plot(0, xw)
         basic.pause(500)
