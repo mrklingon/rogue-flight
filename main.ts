@@ -56,6 +56,13 @@ let speed = 200
 xw = 2
 game.setLife(5)
 droid = 0
+images.createBigImage(`
+    . . . . . . # # . .
+    . . . . # # # # . .
+    . . # # . . # # . .
+    # # # # . . . . . .
+    . . # # . . . . . .
+    `).scrollImage(1, 200)
 basic.forever(function () {
     led.plot(0, xw)
     nuStars()
